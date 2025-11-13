@@ -1,8 +1,10 @@
 from shapes import Cylinder, Cone, Cube, Cuboid, Sphere
 
 class MenuProgram:
+    # Start the menu loop
     def start(self):
         while True:
+            # Print shape menu
             print("\n===== SHAPE MENU =====")
             print("1. Cylinder")
             print("2. Cone")
@@ -10,20 +12,23 @@ class MenuProgram:
             print("4. Cuboid")
             print("5. Sphere")
             print("6. Exit")
-
+            
+            # User selects shape
             choice = int(input("Select a shape: "))
 
             if choice == 6:
-                print("Exiting Program...")
+                print("Get lost")
                 break
-
+            
+            # Print operation menu
             print("\n--- Choose Operation ---")
             print("1. Curved Surface Area (CSA)")
             print("2. Total Surface Area (TSA)")
             print("3. Volume")
 
             op = int(input("Enter choice: "))
-
+            
+            # Object creation based on shape selection
             if choice == 1:
                 r = float(input("Enter radius: "))
                 h = float(input("Enter height: "))
@@ -52,7 +57,7 @@ class MenuProgram:
                 print("Invalid shape!")
                 continue
 
-
+            # Perform operation based on user choic
             if op == 1:
                 print("CSA =", obj.csa())
             elif op == 2:
