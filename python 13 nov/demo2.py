@@ -1,10 +1,8 @@
 from shapes import Cylinder, Cone, Cube, Cuboid, Sphere
 
 class MenuProgram:
-    # Start the menu loop
     def start(self):
         while True:
-            # Print shape menu
             print("\n===== SHAPE MENU =====")
             print("1. Cylinder")
             print("2. Cone")
@@ -13,7 +11,6 @@ class MenuProgram:
             print("5. Sphere")
             print("6. Exit")
             
-            # User selects shape
             choice = int(input("Select a shape: "))
 
             if choice == 6:
